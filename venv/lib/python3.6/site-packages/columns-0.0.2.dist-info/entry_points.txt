@@ -1,0 +1,3 @@
+[console_scripts]
+columns = columns.__main__:main
+

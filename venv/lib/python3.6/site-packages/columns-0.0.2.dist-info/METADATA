@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: columns
+Version: 0.0.2
+Summary: Print a list in columns.
+Home-page: https://github.com/tslight/columns
+Author: Toby Slight
+Author-email: tobyslight@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: ISC License (ISCL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# PRINT A LIST IN COLUMNS
+
+*Does what it says on the tin.*
+
+![img](./scrot.png "Screenshot")
+
+Print a list in columns based on the size of the current terminal, favoring
+vertical space over horizontal, i.e) use all available vertical space before
+creating additional columns.
+
+## INSTALLATION
+
+`pip install columns`
+
+## CLI USAGE
+
+```
+usage: columns [-h] list [list ...]
+
+Print a list in columns.
+
+positional arguments:
+  list        A list to print.
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
+
+## EXAMPLES
+
+`columns items{0..256}`
+
+`columns $(shuf -n 100 /usr/share/dict/words)`
+
+
